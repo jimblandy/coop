@@ -20,3 +20,8 @@ do.
 
 I've included my answer for the x86-64 architecture in `coop-x86_64.s.gz`,
 compressed so that you won't see it by accident.
+
+Also, I cannot recommend Matasano's
+[Embedded Security CTF](https://microcorruption.com/) highly enough. That was a
+blast. I got [my score](https://microcorruption.com/profile/8542) up to 515
+before I *cough* got distracted by other pressing business.
