@@ -16,7 +16,7 @@ void counter(struct coop *creator, void *ptr)
   coop_send(creator, "five");
 
   // Sending a null pointer indicates that we're done.
-  coop_send(NULL);
+  coop_send(creator, NULL);
 }
 
 int main(int argc, char **argv) {
@@ -34,7 +34,7 @@ int main(int argc, char **argv) {
     printf("%s\n", str);
   }
 
-  coop_free(gen);
+  free(gen);
 
   return 0;
 }

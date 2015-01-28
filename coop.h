@@ -27,7 +27,3 @@ void *coop_start(void *stack, size_t size, coop_start_fn *f, void *ptr);
 // Transfer control to |to|, passing |ptr|. Return the next value sent to the
 // calling thread.
 void *coop_send(struct coop *to, void *ptr);
-
-// Free |coop|'s stack. You should only free a coop thread when it's expecting
-// to be freed, and has already cleaned up any resources it owns.
-void coop_free(struct coop *coop);
