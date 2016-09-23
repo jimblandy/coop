@@ -27,8 +27,7 @@ Learning Strategies
 -------------------
 
 You probably do *not* want to start this exercise by reading the GNU assembler
-docs and hunting down the processor-specific ABI for your machine. That is some
-serious lawyering, and I don't think the assembler manual is super.
+docs. They are not super.
 
 A better way to learn what you need to know might be to write a C file that does
 something very simple like declare a global variable, or define a function that
@@ -58,6 +57,14 @@ it puts return values, and so on.
 To try things out, you can edit this file and assemble it. It turns out that you
 can just pass `.s` files to GCC and it will assemble and link it for you like
 any other source file. The `Makefile` shows an example of this.
+
+However, I don't think you can solve it correctly without understand how
+parameters are passed to functions on your machine. I've included version 0.99.8
+of the [x86-64 processor-specific ABI][abi] in this repository because it's
+almost impossible to find, and doesn't seem to have a stable home. You want
+pages 13--26.
+
+[abi]: x86-64-psabi-0.99.8.pdf
 
 Shout Out
 ---------
